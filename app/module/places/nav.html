@@ -1,0 +1,8 @@
+<ul>
+    <li ng-repeat="item in list" ui-sref-active="active">
+        <a ui-sref="place.details({id: item._id})">
+            {{item.name}}
+            <small>{{item.address.rawAddress}}</small>
+        </a>
+    </li>
+</ul>

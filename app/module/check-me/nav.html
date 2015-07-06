@@ -1,0 +1,8 @@
+<ul>
+    <li ng-repeat="item in list" ui-sref-active="active">
+        <a ui-sref="check-me.details({id: item._id})">
+            {{item._id}}
+            <small>{{item.template}}</small>
+        </a>
+    </li>
+</ul>

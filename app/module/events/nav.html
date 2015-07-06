@@ -1,0 +1,8 @@
+<ul>
+    <li ng-repeat="item in list" ui-sref-active="active">
+        <a ui-sref="event.details({id: item._id})">
+            {{item.name}}
+            <small>{{item.startTimestamp | date: 'yyyy-MM-dd HH:mm'}}</small>
+        </a>
+    </li>
+</ul>

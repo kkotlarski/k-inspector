@@ -1,0 +1,8 @@
+
+<div class="row">
+    <div class="col s12">
+        <a ng-click="setData(-1)" class="btn">All</a>
+        <a ng-click="setData(i)" ng-repeat="(i, item) in item.history" class="btn">{{item.createdAt | date: 'yyyy-MM-dd HH:mm' }} ({{item.status}})</a>
+    </div>
+</div>
+<pre class="flow-text">{{data | json}}</pre>
